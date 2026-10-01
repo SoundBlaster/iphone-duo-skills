@@ -48,7 +48,7 @@ Test decision boundaries and precedence independently from runtime UI behavior. 
 
 ## Local source pointers
 
-CityChain repository: `/Users/egor/Development/GitHub/Specification Project/SwiftDecision-Examples`.
+The following source pointers are relative to the CityChain repository checkout. Use them when that repository is available locally; otherwise treat the examples above as design guidance and do not claim to have inspected current CityChain source.
 
 - `Sources/CityChainPresentation/CityChainLayoutPolicy.swift`: resting versus usable height, ordered fold/expanded/focused choices, and local atlas-width policy.
 - `CityChainApp/pages/city-chain/ui/CityChainPage.swift`: geometry adapter, resting-height measurement, game-pane identity, atlas lifetime, and tabletop composition.
