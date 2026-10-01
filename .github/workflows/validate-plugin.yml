@@ -1,0 +1,33 @@
+name: Validate plugin
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements-ci.txt
+      - name: Fetch the upstream skill validator
+        run: >-
+          curl --fail --location --silent --show-error
+          https://raw.githubusercontent.com/openai/skills/49f948faa9258a0c61caceaf225e179651397431/skills/.system/skill-creator/scripts/quick_validate.py
+          --output "$RUNNER_TEMP/quick_validate.py"
+      - name: Validate skill frontmatter and naming
+        run: python "$RUNNER_TEMP/quick_validate.py" skills/iphone-duo-examples
+      - name: Validate plugin manifests and bundled skills
+        run: python scripts/validate_plugin.py
+      - name: Check patch whitespace
+        run: git diff --check "origin/${GITHUB_BASE_REF:-main}...HEAD"

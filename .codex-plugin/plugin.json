@@ -1,0 +1,23 @@
+{
+  "name": "iphone-duo-examples",
+  "version": "0.1.0",
+  "description": "Use the iPhone Duo SwiftUI example catalog and apply its documented layout patterns.",
+  "author": {
+    "name": "SoundBlaster"
+  },
+  "repository": "https://github.com/SoundBlaster/iphone-duo-skills",
+  "license": "MIT",
+  "keywords": ["iPhone Duo", "SwiftUI", "foldable", "iOS"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "iPhone Duo Examples",
+    "shortDescription": "Find and apply iPhone Duo SwiftUI examples.",
+    "longDescription": "Search the iPhone Duo reference catalog first, explain source examples in context, and distinguish documented APIs from simulator observations.",
+    "developerName": "SoundBlaster",
+    "category": "Developer tools",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Use the iPhone Duo examples plugin to find a relevant SwiftUI API example or adaptive layout pattern."
+    ]
+  }
+}
