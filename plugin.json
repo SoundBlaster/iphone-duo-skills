@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "iphone-duo-examples",
+  "version": "0.1.0",
+  "description": "Use the iPhone Duo SwiftUI example catalog and apply its documented layout patterns.",
+  "author": {
+    "name": "SoundBlaster",
+    "url": "https://github.com/SoundBlaster"
+  },
+  "repository": "https://github.com/SoundBlaster/iphone-duo-skills",
+  "license": "MIT",
+  "keywords": ["iPhone Duo", "SwiftUI", "foldable", "iOS"]
+}
