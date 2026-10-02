@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">iPhone Duo Skills — foldable phone</title>
+  <rect width="128" height="128" rx="28" fill="#0f172a"/>
+  <rect x="25" y="22" width="78" height="84" rx="12" fill="#1e293b" stroke="#e2e8f0" stroke-width="4"/>
+  <rect x="32" y="29" width="29" height="70" rx="5" fill="#38bdf8"/>
+  <rect x="67" y="29" width="29" height="70" rx="5" fill="#818cf8"/>
+  <path d="M64 31v66" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <path d="m46 54-8 10 8 10m36-20 8 10-8 10" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
